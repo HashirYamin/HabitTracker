@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/habitbg2"
+    android:padding="18dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="TODAYS HABITS"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewHabits"
+                android:layout_width="match_parent"
+                android:layout_marginTop="90dp"
+
+                android:paddingHorizontal="20dp"
+                android:layout_below="@+id/heading"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnAddHabit"
+                android:layout_width="120dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/recyclerViewHabits"
+                android:background="@drawable/custom_button_background3"
+                android:layout_alignParentRight="true"
+                android:text="Add New Habit" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

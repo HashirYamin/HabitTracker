@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/portraitbg"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginTop="90dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        android:text="Enter the Habbit: "/>
+
+    <EditText
+        android:id="@+id/etHabitName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_border"
+        android:minLines="5"
+        android:gravity="start|top"
+        android:padding="8dp"
+        android:hint="Enter Habit Name" />
+
+
+    <Button
+        android:id="@+id/btnSaveHabit"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/etHabitName"
+        android:background="@drawable/custom_button_background4"
+        android:text="Save Habit" />
+</RelativeLayout>

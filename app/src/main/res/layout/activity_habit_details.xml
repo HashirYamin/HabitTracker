@@ -1,0 +1,154 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/portraitbg"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Habit Name -->
+        <TextView
+            android:id="@+id/tvHabitDetailsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Habit Name"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <!-- Completion History -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_background1"
+            >
+            <TextView
+                android:id="@+id/completions_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Completion History:"
+                android:gravity="center|top"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/tvCompletionHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/completions_txt"
+                android:padding="8dp"
+                android:gravity="center|top"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <!-- Set Reminder Time -->
+        <EditText
+            android:id="@+id/etReminderTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter reminder time (HH:mm)"
+            android:background="@drawable/rounded_border"
+            android:gravity="center"
+            android:inputType="time"
+            android:layout_marginTop="16dp"
+            android:padding="8dp" />
+
+        <!-- Set Reminder Button -->
+        <RelativeLayout
+            android:id="@+id/btnSetReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_background6"
+            android:layout_below="@+id/forgot_password"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_notifications_active_24"
+                android:layout_marginLeft="40dp"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Set Reminder"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textSize="17dp"
+                android:textColor="@android:color/black"/>
+        </RelativeLayout>
+
+        <!-- Mark as Complete Button -->
+        <RelativeLayout
+            android:id="@+id/btnMarkComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_background2"
+            android:layout_below="@+id/forgot_password"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_check_circle_24"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Mark as Completed"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textSize="17dp"
+                android:textColor="@android:color/black"/>
+        </RelativeLayout>
+
+        <!-- Delete Habit Button -->
+        <RelativeLayout
+            android:id="@+id/btnDeleteHabit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_background7"
+            android:layout_below="@+id/forgot_password"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_delete_24"
+                android:layout_marginLeft="50dp"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Delete Habit"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textSize="17dp"
+                android:textColor="@android:color/black"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

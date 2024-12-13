@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#58D04B"/> <!-- Darker blue when pressed -->
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#FAE5A4"
+                android:endColor="#E6E5DF"
+                android:angle="90"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+</selector>
